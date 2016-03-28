@@ -8,7 +8,7 @@ for (var i = startNum | 0; i <= endNum | 0; i++) {
   
   if (i%3 === 0 && i%5 === 0) {
     listItem.innerText = 'FizzBuzz';
-    }
+  }
   else if (i%5 === 0) {
     listItem.innerText = 'Buzz';
   }
