@@ -3,11 +3,13 @@ var numList = document.getElementById('number-output');
 function promptBegin () {
   startNum = prompt("Where would you like to start?");
   startNum = startNum | 0;
+  return startNum;
 }
 
 function promptEnd () {
   endNum = prompt("Where would you like to end?");
   endNum = endNum | 0;
+  return endNum;
 }
 
 function validateEndNum () {
