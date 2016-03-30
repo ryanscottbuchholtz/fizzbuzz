@@ -1,8 +1,15 @@
 var numList = document.getElementById('number-output');
 
+// function isThisANumber(number) {
+//   while (isNaN(number)) {
+//     alert("Your input is not a number. Please try again.");
+//   }
+// }
+
 function promptBegin () {
   startNum = prompt("Where would you like to start?");
   startNum = (parseInt(startNum));
+    
     while (isNaN(startNum)) {
       alert("Your input is not a number. Please try again.");
       startNum = prompt("Where would you like to start?");
