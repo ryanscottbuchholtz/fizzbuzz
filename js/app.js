@@ -2,14 +2,22 @@ var numList = document.getElementById('number-output');
 
 function promptBegin () {
   startNum = prompt("Where would you like to start?");
-  startNum = startNum | 0;
-  return startNum;
+  startNum = (parseInt(startNum));
+    while (isNaN(startNum)) {
+      alert("Your input is not a number. Please try again.");
+      startNum = prompt("Where would you like to start?");
+      startNum = (parseInt(startNum));
+    }
 }
 
 function promptEnd () {
-  endNum = prompt("Where would you like to end?");
-  endNum = endNum | 0;
-  return endNum;
+  endNum = prompt("Beginning number is " + startNum + "." + " Where would you like to end?");
+  endNum = (parseInt(endNum));
+    while (isNaN(endNum)) {
+      alert("Your input is not a number. Please try again.");
+      endNum = prompt("Beginning number is " + startNum + "." + " Where would you like to end?");
+      endNum = (parseInt(endNum));
+    }
 }
 
 function validateEndNum () {
