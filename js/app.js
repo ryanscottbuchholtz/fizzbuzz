@@ -6,6 +6,8 @@ var numList = document.getElementById('number-output');
 //   }
 // }
 
+//added to test github
+
 function promptBegin () {
   startNum = prompt("Where would you like to start?");
   startNum = (parseInt(startNum));
